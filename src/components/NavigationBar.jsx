@@ -1,4 +1,5 @@
 import BlackLogo from '../assets/Logo/black.png'
+import GreenLogo from '../assets/Logo/blue-green.png'
 
 const NavigationBar = () => {
   return (
@@ -7,7 +8,10 @@ const NavigationBar = () => {
             <div className="grid grid-cols-12 items-center">
 
                 <div className="col-span-3 pl-14">
-                    <img src={BlackLogo} alt="Logo" className="h-auto w-[72px]"/>
+                  <a href="#" class="relative group w-[72px] h-auto">
+                      <img src={BlackLogo} class="w-[72px] block group-hover:hidden" alt="default logo"/>
+                      <img src={GreenLogo} class="w-[72px] hidden group-hover:block"  alt=""/>
+                  </a>
                 </div>
 
 
