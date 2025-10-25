@@ -1,0 +1,35 @@
+import BlackLogo from '../assets/Logo/black.png'
+
+const NavigationBar = () => {
+  return (
+      <nav className="flex justify-center items-center bg-primary p-4 text-black">
+        <div className="container">
+            <div className="grid grid-cols-12 items-center">
+
+                <div className="col-span-3 pl-14">
+                    <img src={BlackLogo} alt="Logo" className="h-auto w-[72px]"/>
+                </div>
+
+
+                <div className="col-span-6">
+                  <ul className="flex justify-evenly text-lg font-semibold">
+                    <li className="Poppins font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">ABOUT ME</li>
+                    <li className="Poppins font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">PROJECT / PORTFOLIO</li>
+                    <li className="Poppins font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">SKILLS</li>
+                    <li className="Poppins font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">CONTACT ME</li>
+                  </ul>
+                </div>
+
+
+                <div className="col-span-3 flex justify-end pr-14">
+                  <button className="Poppins bg-transparent px-6 py-2 text-[15px] border border-[#028090] font-semibold text-[#028090] rounded-lg hover:bg-[#028090] hover:text-[#FFFFEF] transition duration-300 cursor-pointer">Download CV</button>
+                </div>
+            </div>
+
+        </div>
+      </nav>
+
+  )
+}
+
+export default NavigationBar

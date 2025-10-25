@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+:root {
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Varela', sans-serif;
+
+  --bg-primary: #FFFFEF;
+  --bg-secondary: #028090;
+
+  --text-primary: #FFFFEF;
+  --text-secondary: #028090;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-primary);
+}
+
+/* ✅ Optional utility classes */
+.Poppins {
+  font-family: var(--primary-font);
+}
+
+.Varela {
+  font-family: var(--secondary-font);
+}
+
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
