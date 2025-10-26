@@ -3,6 +3,7 @@
 :root {
   --primary-font: 'Poppins', sans-serif;
   --secondary-font: 'Varela', sans-serif;
+  --third-font: 'Varela Round', serif;
 
   --bg-primary: #FFFFEF;
   --bg-secondary: #028090;
@@ -25,6 +26,10 @@ html, body {
 
 .Varela {
   font-family: var(--secondary-font);
+}
+
+.Lora {
+  font-family: var(--third-font);
 }
 
 .bg-primary {
