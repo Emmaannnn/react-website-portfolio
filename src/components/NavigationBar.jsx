@@ -3,7 +3,7 @@ import GreenLogo from '../assets/Logo/blue-green.png'
 
 const NavigationBar = () => {
   return (
-      <nav className="flex justify-center items-center bg-primary p-4 text-black">
+      <nav className="flex justify-center items-center bg-primary p-4 text-black shadow-md fixed w-full top-0 left-0 z-50 ">
         <div className="container">
             <div className="grid grid-cols-12 items-center">
 

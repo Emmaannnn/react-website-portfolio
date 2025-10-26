@@ -1,6 +1,7 @@
 import './App.css'
 import NavigationBar from './components/NavigationBar'
 import GreetingsWithImage from './components/GreetingsWithImage'
+import AboutMe from './components/AboutMe'
 
 function App() {
 
@@ -12,7 +13,11 @@ function App() {
       
       <div className="flex justify-center h-full w-full">
         <div className="container">
+          {/* FIRST LAYER */}
           <GreetingsWithImage/>
+
+          {/* SECOND LAYER */}
+          <AboutMe/>
         </div>
       </div>
       
