@@ -25,7 +25,7 @@ const GreetingsWithImage = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-12 gap-auto bg-primary h-[720px] mt-18">
+    <div className="grid grid-cols-12 gap-auto bg-primary h-[720px] mt-16">
         <div className="col-span-6 flex flex-col mt-40 pl-20">
             <h1 className="Varela text-5xl font-bold mb-4">Hello, I'm <span className="text-[#028090]">Emman</span></h1>
             <h2 className="Varela text-xl font-semibold mb-4 -mt-2 text-[#028090]">Web Developer & Graphic Designer</h2>
