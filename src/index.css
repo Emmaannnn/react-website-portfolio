@@ -4,9 +4,11 @@
   --primary-font: 'Poppins', sans-serif;
   --secondary-font: 'Varela', sans-serif;
   --third-font: 'Varela Round', serif;
+  --fourth-font: 'Inter', serif;
 
-  --bg-primary: #FFFFEF;
+  --bg-primary: #f7f7f7;
   --bg-secondary: #028090;
+  --bg-offprimary: #FFFFEF;
 
   --text-primary: #FFFFEF;
   --text-secondary: #028090;
@@ -32,12 +34,20 @@ html, body {
   font-family: var(--third-font);
 }
 
+.Inter {
+  font-family: var(--fourth-font);
+}
+
 .bg-primary {
   background-color: var(--bg-primary);
 }
 
 .bg-secondary {
   background-color: var(--bg-secondary);
+}
+
+.bg-offprimary {
+  background-color: var(--bg-offprimary);
 }
 
 .text-primary {
@@ -47,3 +57,4 @@ html, body {
 .text-secondary {
   color: var(--text-secondary);
 }
+

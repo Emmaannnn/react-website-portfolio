@@ -18,6 +18,7 @@ function App() {
 
           {/* SECOND LAYER */}
           <AboutMe/>
+
         </div>
       </div>
       
