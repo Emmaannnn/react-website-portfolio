@@ -1,5 +1,7 @@
 import {useRef , useEffect} from 'react'
 import BatoBatoPickImg from '../assets/img/batobatopick-logo.png'
+import BatoBatoPickGamePlay from '../assets/img/batobatopick-gameplay.png'
+import BatoBatoPickGamePlay2 from '../assets/img/batobatopick-gameplay2.png'
 import UnavailableImg from '../assets/img/unavailable.jpg'
 import Image1 from '../assets/img/Image Portfolio/1.jpg'
 import Image2 from '../assets/img/Image Portfolio/2.jpg'
@@ -17,6 +19,7 @@ import Image13 from '../assets/img/Image Portfolio/13.jpg'
 import Image14 from '../assets/img/Image Portfolio/14.jpg'
 import BorderRight from '../assets/img/rightborder.png'
 import BorderLeft from '../assets/img/leftborder.png'
+
 
 
 const ProjectPortfolio = () => {
@@ -100,10 +103,15 @@ const ProjectPortfolio = () => {
       <div className="Varela text-3xl font-extrabold text-[#028090]/70 w-full text-center mb-10 italic">"Striving for Progress, Not Perfection"</div>
 
       {/* WEBSITE PROJECTS */}
-      <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-4 hover:shadow-lg transition-all duration-300 mx-40 mb-6">
+      <div className="bg-primary rounded-2xl shadow-md border border-slate-200 p-4 hover:shadow-lg hover:scale-105 transition-all duration-300 mx-40 mb-6">
         <div className="grid grid-cols-12 gap-8 h-60">
-          <div className="col-span-5 flex justify-center">
-            <img src={BatoBatoPickImg} alt="BatoBatoPick Logo" className="w-auto h-60 rounded-xl object-cover"/>
+          <div className="col-span-5 flex justify-center ">
+            <div className="hover-gallery w-full">
+              <img src={BatoBatoPickImg} alt="BatoBatoPick Logo" className="w-auto h-60 rounded-xl object-cover"/>
+              <img src={BatoBatoPickGamePlay} alt="BatoBatoPickGamePlay" className="w-auto h-60 rounded-xl object-contain"/>
+              <img src={BatoBatoPickGamePlay2} alt="BatoBatoPickGamePlay2" className="w-auto h-60 rounded-xl object-contain"/>
+            </div>
+
           </div>
 
           <div className="col-span-7 mt-4 Inter flex flex-col justify-between">
@@ -123,7 +131,7 @@ const ProjectPortfolio = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-4 hover:shadow-lg transition-all duration-300 mx-40">
+      <div className="bg-primary rounded-2xl shadow-md border border-slate-200 p-4 hover:shadow-lg hover:scale-105 transition-all duration-300 mx-40">
         <div className="grid grid-cols-12 gap-8 h-60">
           <div className="col-span-5 flex justify-center">
             <img src={UnavailableImg} alt="BatoBatoPick Logo" className="w-auto h-60 rounded-xl object-cover"/>
@@ -155,7 +163,7 @@ const ProjectPortfolio = () => {
         <img src={BorderLeft} alt="" className='absolute h-110 left-0' />
         <div ref={scrollRef} className="col-span-12 flex flex-nowrap h-110 gap-4 py-10 px-4 overflow-hidden">
           {loopImages.map((img, index) => (
-            <img key={index} src={img} alt="" className='object-contain rounded-lg shadow-lg h-auto '/>
+            <img key={index} src={img} alt="" className='object-contain rounded-lg shadow-lg h-auto hover:scale-105 transition duration-300'/>
 
           ))}
         </div>
