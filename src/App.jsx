@@ -2,6 +2,8 @@ import './App.css'
 import NavigationBar from './components/NavigationBar'
 import GreetingsWithImage from './components/GreetingsWithImage'
 import AboutMe from './components/AboutMe'
+import TitlePortfolio from './components/ProjectPortfolio'
+import ProjectPortfolio from './components/ProjectPortfolio'
 
 function App() {
 
@@ -18,6 +20,9 @@ function App() {
 
           {/* SECOND LAYER */}
           <AboutMe/>
+
+          {/* THIRD LAYER */}
+          <ProjectPortfolio/>
 
         </div>
       </div>

@@ -22,11 +22,11 @@ const AboutMe = () => {
 
   return (
 
-    <div className="grid grid-cols-12 gap-auto bg-primary">
+    <div className="grid grid-cols-12 gap-auto bg-primary border-b border-black/15">
       <div className="col-span-6 flex p-20">
         <div className="relative left-20">
-          <img ref={BorderRightMove} src={BorderRight} alt="Second Profile" className="absolute w-auto h-140 -left-6 rounded-xl object-cover -mt-5" />
-          <img src={MySecondProfile} alt="Second Profile" className="w-auto h-130 rounded-xl object-cover" />
+          <img ref={BorderRightMove} src={BorderRight} alt="Second Profile" className="absolute w-auto h-155 -left-6 rounded-xl object-cover -mt-5" />
+          <img src={MySecondProfile} alt="Second Profile" className="w-auto h-145 rounded-xl object-cover" />
         </div>
       </div>
 

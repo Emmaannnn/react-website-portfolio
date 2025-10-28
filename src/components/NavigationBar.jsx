@@ -18,7 +18,7 @@ const NavigationBar = () => {
                 <div className="col-span-6">
                   <ul className="flex justify-evenly text-lg font-semibold">
                     <li className="Inter font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">ABOUT ME</li>
-                    <li className="Inter font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">PROJECT / PORTFOLIO</li>
+                    <li className="Inter font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">PROJECT | PORTFOLIO</li>
                     <li className="Inter font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">SKILLS</li>
                     <li className="Inter font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">CONTACT ME</li>
                   </ul>
@@ -26,7 +26,7 @@ const NavigationBar = () => {
 
 
                 <div className="col-span-3 flex justify-end pr-14">
-                  <button className="Poppins bg-transparent px-6 py-2 text-[15px] border border-[#028090] font-semibold text-[#028090] rounded-lg hover:bg-[#028090] hover:text-[#FFFFEF] transition duration-300 cursor-pointer">Download CV</button>
+                  <button className="Inter bg-transparent px-6 py-2 text-[15px] border border-[#028090] font-semibold text-[#028090] rounded-lg hover:bg-[#028090] hover:text-[#FFFFEF] transition duration-300 cursor-pointer">Download CV</button>
                 </div>
             </div>
 
