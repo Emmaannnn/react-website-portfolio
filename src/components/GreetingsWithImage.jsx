@@ -25,11 +25,12 @@ const GreetingsWithImage = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-12 gap-auto bg-primary mt-16 h-[640px] border-b border-black/15">
+    <section className="grid grid-cols-12 gap-auto bg-primary mt-14 h-[640px] border-b border-black/15">
         <div className="col-span-7 flex flex-col mt-40 pl-20 text-black">
             <h1 className="Inter text-7xl font-bold mb-4">Hi, this is <span className="text-[#028090]">Emman.</span></h1>
             <h2 className="Varela text-xl font-semibold mb-4 -mt-2 text-[#028090]">Web Developer & Graphic Designer</h2>
             <p className="Varela text-lg mb-6 mr-12 text-black/70">I’m an aspiring web developer and graphic designer. A passionate developer specializing in web applications and user experience design. I enjoy creating experiences that are both useful and beautiful.</p>
+        
         </div>
 
         <div className="relative col-span-5 flex items-start justify-center overflow-x-hidden">
@@ -38,8 +39,9 @@ const GreetingsWithImage = () => {
             <img src={MyProfile} alt="My Profile" className="absolute z-1 h-145 object-cover object-center "/>
 
         </div>
+
         
-    </div>
+    </section>
 
   )
 }

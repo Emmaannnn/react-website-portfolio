@@ -2,6 +2,7 @@ import {useRef , useEffect} from 'react'
 import MySecondProfile from '../assets/img/dddppp.jpg'
 import BorderRight from '../assets/img/rightborder.png'
 
+
 const AboutMe = () => {
 
   const BorderRightMove = useRef(null);
@@ -22,7 +23,7 @@ const AboutMe = () => {
 
   return (
 
-    <div className="grid grid-cols-12 gap-auto bg-primary border-b border-black/15">
+    <section className="grid grid-cols-12 gap-auto bg-primary border-b border-black/15">
       <div className="col-span-6 flex p-20">
         <div className="relative left-20">
           <img ref={BorderRightMove} src={BorderRight} alt="Second Profile" className="absolute w-auto h-155 -left-6 rounded-xl object-cover -mt-5" />
@@ -33,7 +34,7 @@ const AboutMe = () => {
       <div className="col-span-6 text-black p-13 ">
         <div className="flex flex-col">
           <div className="card-title">
-            <h2 className="Inter text-6xl font-bold text-secondary w-full mb-3">About me.</h2>
+            <h2 className="Inter text-6xl font-bold text-secondary w-full mb-3">| About me.</h2>
           </div>
 
           <div className="card-body Varela">
@@ -49,9 +50,9 @@ const AboutMe = () => {
           
 
         </div>
-        
+      
       </div>
-    </div>
+    </section>
 
 
   )

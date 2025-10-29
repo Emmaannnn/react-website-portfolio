@@ -16,7 +16,7 @@ const NavigationBar = () => {
 
 
                 <div className="col-span-6">
-                  <ul className="flex justify-evenly text-lg font-semibold">
+                  <ul className="flex justify-evenly text-lg font-semibold text-third">
                     <li className="Inter font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">ABOUT ME</li>
                     <li className="Inter font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">PROJECT | PORTFOLIO</li>
                     <li className="Inter font-medium text-[15px] block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">SKILLS</li>

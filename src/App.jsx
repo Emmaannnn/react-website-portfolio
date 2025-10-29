@@ -2,8 +2,11 @@ import './App.css'
 import NavigationBar from './components/NavigationBar'
 import GreetingsWithImage from './components/GreetingsWithImage'
 import AboutMe from './components/AboutMe'
-import TitlePortfolio from './components/ProjectPortfolio'
 import ProjectPortfolio from './components/ProjectPortfolio'
+import SkillsGain from './components/SkillsGain'
+import ContactMe from './components/ContactMe'
+import Footer from './components/Footer'
+
 
 function App() {
 
@@ -24,8 +27,15 @@ function App() {
           {/* THIRD LAYER */}
           <ProjectPortfolio/>
 
+          {/* FOURTH LAYER */}
+          <SkillsGain/>
+
+          {/* FIFTH LAYER */}
+          <ContactMe/>
         </div>
       </div>
+
+      <Footer/>
       
     </>
   )

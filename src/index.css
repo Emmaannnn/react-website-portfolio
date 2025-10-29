@@ -8,10 +8,11 @@
 
   --bg-primary: #f7f7f7;
   --bg-secondary: #028090;
-  --bg-offprimary: #FFFFEF;
+  --bg-third: #003459;
 
   --text-primary: #FFFFEF;
   --text-secondary: #028090;
+  --text-third: #003459;
 }
 
 html, body {
@@ -46,6 +47,10 @@ html, body {
   background-color: var(--bg-secondary);
 }
 
+.bg-third{
+  background-color: var(--bg-third);
+}
+
 .bg-offprimary {
   background-color: var(--bg-offprimary);
 }
@@ -56,5 +61,9 @@ html, body {
 
 .text-secondary {
   color: var(--text-secondary);
+}
+
+.text-third{
+  color: var(--text-third);
 }
 
