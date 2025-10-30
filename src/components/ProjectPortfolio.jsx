@@ -99,8 +99,8 @@ const ProjectPortfolio = () => {
   return (
     <section className="pt-20 pb-10 border-b border-black/15">
 
-      <h2 className="Inter text-6xl font-bold text-secondary w-full mb-3 text-center">| Website Project.</h2>
-      <div className="Varela text-3xl font-extrabold text-[#003459]/70 w-full text-center mb-10 italic">"Striving for Progress, Not Perfection"</div>
+      <h2 className="Inter text-6xl font-bold text-third w-full mb-3 text-center">| Website <span className='text-secondary'>Project.</span></h2>
+      <div className="Varela text-3xl font-extrabold text-third w-full text-center mb-15 italic">"Striving for <span className='text-secondary'>Progress</span>, <span className='text-secondary'>Not Perfection</span>"</div>
 
       {/* WEBSITE PROJECTS */}
       <div className="bg-primary rounded-2xl shadow-md border border-slate-200 p-4 hover:shadow-lg hover:scale-105 transition-all duration-300 mx-40 mb-6">
@@ -108,15 +108,15 @@ const ProjectPortfolio = () => {
           <div className="col-span-5 flex justify-center ">
             <div className="hover-gallery w-full">
               <img src={BatoBatoPickImg} alt="BatoBatoPick Logo" className="w-auto h-60 rounded-xl object-cover"/>
-              <img src={BatoBatoPickGamePlay} alt="BatoBatoPickGamePlay" className="w-auto h-60 rounded-xl object-contain"/>
-              <img src={BatoBatoPickGamePlay2} alt="BatoBatoPickGamePlay2" className="w-auto h-60 rounded-xl object-contain"/>
+              <img src={BatoBatoPickGamePlay} alt="BatoBatoPickGamePlay" className="w-full h-60 rounded-xl object-cover"/>
+              <img src={BatoBatoPickGamePlay2} alt="BatoBatoPickGamePlay2" className="w-full h-60 rounded-xl object-cover"/>
             </div>
 
           </div>
 
           <div className="col-span-7 mt-4 Inter flex flex-col justify-between">
             <div className="title">
-              <h1 className="text-2xl font-bold mb-1 text-[#003459]/80">Web-Based: BatoBatoPick Game</h1>
+              <h1 className="text-2xl font-bold mb-1 text-[#003459]/90">Web-Based: <span className="text-secondary">BatoBatoPick Game</span></h1>
               <div className="badge badge-sm badge-outline badge-success italic">Available</div>
             </div>
               <p className="py-5 Inter text-black/70">
@@ -124,7 +124,7 @@ const ProjectPortfolio = () => {
               </p>
               
               <a href="https://emmaannnn.github.io/Rock-Paper-Scissors/" target='_blank' >
-                <button className="btn w-full">View Details <svg className="pl-1 h-4 w-4 cursor-pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 256 256" height="256px" id="Layer_1" version="1.1" viewBox="0 0 256 256" width="256px" xml:space="preserve"><path d="M164.525,222.138l89.6-89.6c2.5-2.5,2.5-6.551,0-9.051l-89.6-89.6c-2.5-2.5-6.551-2.5-9.051,0s-2.5,6.743,0,9.243  L234.15,122H6.4c-3.535,0-6.4,2.466-6.4,6s2.865,6,6.4,6h227.75l-78.676,78.881c-1.25,1.25-1.875,2.992-1.875,4.629  s0.625,3.326,1.875,4.576C157.975,224.586,162.025,224.638,164.525,222.138z"></path></svg></button>
+                <button className="btn w-full">Live Demo <svg className="pl-1 h-4 w-4 cursor-pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 256 256" height="256px" id="Layer_1" version="1.1" viewBox="0 0 256 256" width="256px" xml:space="preserve"><path d="M164.525,222.138l89.6-89.6c2.5-2.5,2.5-6.551,0-9.051l-89.6-89.6c-2.5-2.5-6.551-2.5-9.051,0s-2.5,6.743,0,9.243  L234.15,122H6.4c-3.535,0-6.4,2.466-6.4,6s2.865,6,6.4,6h227.75l-78.676,78.881c-1.25,1.25-1.875,2.992-1.875,4.629  s0.625,3.326,1.875,4.576C157.975,224.586,162.025,224.638,164.525,222.138z"></path></svg></button>
               </a>
               
           </div>
@@ -155,8 +155,8 @@ const ProjectPortfolio = () => {
 
             
       {/* GRAPHIC DESIGN */}
-      <h2 className="Inter text-6xl font-bold text-secondary w-full mb-3 text-center pt-20"><span className='opacity-30 text-black'></span> | Graphic Design.</h2>
-      <div className="Varela text-3xl font-extrabold text-[#003459]/70 w-full text-center mb-3 italic ">"Making creativity visible."</div>
+      <h2 className="Inter text-6xl font-bold text-third w-full mb-3 text-center mt-30">| Graphic <span className='text-secondary'>Design.</span></h2>
+      <div className="Varela text-3xl font-extrabold text-[#003459] w-full text-center mb-3 italic ">"Making <span className='text-secondary'>creativity visible.</span>"</div>
       
       <div className="group relative">
         <img src={BorderRight} alt="" className='absolute h-125 right-0' />

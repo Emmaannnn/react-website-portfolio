@@ -1,4 +1,4 @@
-import BlackLogo from '../assets/Logo/black.png'
+import NavyLogo from '../assets/Logo/navy.png'
 import GreenLogo from '../assets/Logo/blue-green.png'
 import { FacebookIcon, EmailIcon, 
     GithubIcon, DiscordIcon, LocationIcon, PhoneIcon } from "./Icons"
@@ -12,13 +12,13 @@ const Footer = () => {
 
                 <div className="col-span-3 flex items-center">
                     <a href="#" class="relative group h-auto">
-                         <img src={BlackLogo} class=" w-full block group-hover:hidden" alt="default logo"/>
+                         <img src={NavyLogo} class=" w-full block group-hover:hidden" alt="default logo"/>
                          <img src={GreenLogo} class=" w-full hidden group-hover:block"  alt=""/>
                     </a>
                 </div>
 
                 <div className="col-span-3 flex flex-col justify-center pl-20 Inter">
-                    <h1 className='text-[#003459] font-bold text-lg mb-4'>Quick Link</h1>
+                    <h1 className='text-[#003459] font-bold text-lg mb-4'>Navigation</h1>
 
                     <div className="flex flex-col text-black/70 gap-2">
                         <h1 className="text-sm">Home</h1>

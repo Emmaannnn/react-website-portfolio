@@ -1,4 +1,4 @@
-import BlackLogo from '../assets/Logo/black.png'
+import NavyLogo from '../assets/Logo/navy.png'
 import GreenLogo from '../assets/Logo/blue-green.png'
 
 const NavigationBar = () => {
@@ -9,7 +9,7 @@ const NavigationBar = () => {
 
                 <div className="col-span-3 pl-14">
                   <a href="#" class="relative group w-[72px] h-auto">
-                      <img src={BlackLogo} class="w-[72px] block group-hover:hidden" alt="default logo"/>
+                      <img src={NavyLogo} class="w-[72px] block group-hover:hidden" alt="default logo"/>
                       <img src={GreenLogo} class="w-[72px] hidden group-hover:block"  alt=""/>
                   </a>
                 </div>
@@ -26,7 +26,7 @@ const NavigationBar = () => {
 
 
                 <div className="col-span-3 flex justify-end pr-14">
-                  <button className="Inter bg-transparent px-6 py-2 text-[15px] border border-[#028090] font-semibold text-[#028090] rounded-lg hover:bg-[#028090] hover:text-[#FFFFEF] transition duration-300 cursor-pointer">Download CV</button>
+                  <button className="Inter bg-transparent px-6 py-2 text-[15px] border border-[#003459] font-semibold text-[#003459] rounded-lg hover:bg-[#003459] hover:text-[#f7f7f7] transition duration-300 cursor-pointer">Download CV</button>
                 </div>
             </div>
 

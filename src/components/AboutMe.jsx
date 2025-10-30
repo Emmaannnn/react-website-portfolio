@@ -31,14 +31,33 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="col-span-6 text-black p-13 ">
+      <div className="col-span-6 text-black pt-15 px-13 pb-13 ">
         <div className="flex flex-col">
-          <div className="card-title">
-            <h2 className="Inter text-6xl font-bold text-secondary w-full mb-3">| About me.</h2>
+          <div className="card-title flex flex-col">
+            <h2 className="Inter text-6xl font-bold text-third w-full mb-3">| About <span className='text-secondary'>Me.</span></h2>
           </div>
 
           <div className="card-body Varela">
-            <div className="bg-primary rounded-2xl shadow-sm border border-slate-200 p-5 hover:shadow-lg transition-all duration-300 text-black/70">
+            <div className="bg-primary rounded-2xl shadow-md border border-slate-200 p-5 hover:shadow-lg transition-all duration-300 text-black/70">
+
+              <p className="text-md mb-5">I'm <span class="font-bold"> Lawrence Emman L. Villeta</span></p>
+
+              <p className="text-md">Graduated in Batch 2024 with a <span className="font-semibold">Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.</p>
+
+
+
+              <p className="text-md mb-5">I'm <span class="font-bold"> Lawrence Emman L. Villeta</span></p>
+
+              <p className="text-md">Graduated in Batch 2024 with a <span className="font-semibold">Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.</p>
+
+
+
+
+              <p className="text-md mb-5">I'm <span class="font-bold"> Lawrence Emman L. Villeta</span></p>
+
+              <p className="text-md">Graduated in Batch 2024 with a <span className="font-semibold">Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.</p>
+
+
 
               <p className="text-md mb-5">I'm <span class="font-bold"> Lawrence Emman L. Villeta</span></p>
 
