@@ -24,7 +24,7 @@ const AboutMe = () => {
 
   return (
 
-    <section className="grid grid-cols-12 gap-auto bg-primary border-b border-black/15">
+    <div className="grid grid-cols-12 gap-auto bg-primary border-b border-black/15">
       <div className="col-span-12 md:col-span-6 md:p-20">
         <div className="relative md:left-10 block w-full md:mx-8 mt-5">
           <img ref={BorderRightMove} src={BorderRight} alt="Second Profile" className="absolute hidden md:block h-155 -left-6 rounded-xl object-cover -mt-5" />
@@ -73,7 +73,7 @@ const AboutMe = () => {
         </div>
       
       </div>
-    </section>
+    </div>
 
 
   )

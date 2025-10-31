@@ -97,7 +97,7 @@ const ProjectPortfolio = () => {
 
 
   return (
-    <section className="pt-10 md:pt-20 pb-10 border-b border-black/15">
+    <div className="pt-10 md:pt-20 pb-10 border-b border-black/15">
 
       <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full mb-3 text-center">| Website <span className='text-secondary'>Project.</span></h2>
       <div className="Varela text-sm md:text-3xl font-extrabold text-third w-full text-center mb-7 md:mb-15 italic">"Striving for <span className='text-secondary'>Progress</span>, <span className='text-secondary'>Not Perfection</span>"</div>
@@ -171,7 +171,7 @@ const ProjectPortfolio = () => {
       </div>
 
 
-    </section>
+    </div>
 
 
   )

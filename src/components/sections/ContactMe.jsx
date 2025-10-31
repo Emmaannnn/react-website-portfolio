@@ -4,7 +4,7 @@ import { SubmitIcon, MessengerIcon, TelegramIcon,
 
 const ContactMe = () => {
   return (
-    <section className="py-15 md:mt-5 px-7 md:px-40">
+    <div className="py-15 md:mt-5 px-7 md:px-40">
         <h1 className="Inter font-extrabold text-4xl md:text-6xl text-third pb-10">| Get <span className="text-secondary">In Touch.</span></h1>
         
         <h5 className="Inter text-[#003459] text-xl md:text-2xl">Have a vision in mind? Drop me a message — let’s bring it to life together. </h5>
@@ -33,20 +33,21 @@ const ContactMe = () => {
                 <h2 className="text-lg text-[#003459]/70 font-bold py-5">Other ways to communicate</h2>
 
                 <div className="flex flex-col gap-2">
-                    <button className="flex pl-10 justify-start items-center bg-[#003459] hover:bg-[#003459]/90 shadow-sm hover:shadow-md rounded-lg text-white font-semibold p-3 cursor-pointer">
-                        <MessengerIcon className="mr-5 text-xl"/> 
-                        <span className="text-sm"> Messenger</span>
-                    </button>
 
-                    <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md pl-10 justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
+                    <a href="https://m.me/emmanlibardovilleta" target="_blank" rel="noopener noreferrer" className="flex pl-10 justify-start items-center bg-[#003459] hover:bg-[#003459]/90 shadow-sm hover:shadow-md rounded-lg text-white font-semibold p-3 cursor-pointer"> 
+                        <MessengerIcon className="mr-5 text-xl"/> 
+                        <span className="text-sm"> Messenger</span> 
+                    </a>
+
+                    <a href="https://www.instagram.com/emmaaaaaaaannnn/" target="_blank" rel="noopener noreferrer" className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md pl-10 justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
                         <InstagramIcon className="mr-5 text-xl"/> 
                         <span className="text-sm"> Instagram</span>
-                    </button>
+                    </a>
 
-                    <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md pl-10 justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
+                    <a href="https://t.me/ionedot" target="_blank" rel="noopener noreferrer" className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md pl-10 justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
                         <TelegramIcon className="mr-5 text-xl"/> 
                         <span className="text-sm"> Telegram</span>
-                    </button>
+                    </a>
 
                 </div>
 
@@ -55,24 +56,28 @@ const ContactMe = () => {
 
                 <div className="grid grid-cols-12 mt-3 gap-2">
                     <div className="col-span-6 flex flex-col gap-2">
-                        <button className="flex border border-black/15 w-full bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
+                        <a href="https://www.facebook.com/HateDis.Layf24" target="_blank" rel="noopener noreferrer" className="flex border border-black/15 w-full bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
                             <FacebookIcon className="mr-5 text-xl"/> 
                             <span className="text-sm"> Facebook</span>
-                        </button>
+                        </a>
 
-                        <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emmanvilleta@gmail.com" target="_blank" rel="noopener noreferrer" className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
                             <EmailIcon className="mr-5 text-xl"/> 
                             <span className="text-sm"> Email</span>
-                        </button>
+                        </a>
                     </div>
 
                     <div className="col-span-6 flex flex-col gap-2">
-                        <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
+                        <a href="https://github.com/Emmaannnn" target="_blank" rel="noopener noreferrer" className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
                             <GithubIcon className="mr-5 text-xl"/> 
                             <span className="text-sm"> GitHub</span>
-                        </button>
+                        </a>
 
-                        <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
+                        <button onClick={() => {
+                            navigator.clipboard.writeText("emman#8495");
+                            alert("Copied your Discord tag: emman#8495"); }}
+                            className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-lg font-semibold p-3 cursor-pointer">
+                            
                             <DiscordIcon className="mr-5 text-xl"/> 
                             <span className="text-sm"> Discord</span>
                         </button>
@@ -84,7 +89,7 @@ const ContactMe = () => {
 
         </div>
     
-    </section>
+    </div>
   )
 }
 

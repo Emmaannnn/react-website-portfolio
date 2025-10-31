@@ -19,19 +19,34 @@ function App() {
       <main className="flex justify-center h-full w-full">
         <div className="container">
           {/* FIRST LAYER */}
-          <GreetingsWithImage/>
+
+          <section id='home'>
+            <GreetingsWithImage/>
+          </section>
+          
 
           {/* SECOND LAYER */}
-          <AboutMe/>
+          <section id='about-me'>
+            <AboutMe/>
+          </section>
+          
 
           {/* THIRD LAYER */}
-          <ProjectPortfolio/>
+          <section id='portfolio'>
+            <ProjectPortfolio/>
+          </section>
+          
 
           {/* FOURTH LAYER */}
-          <SkillsGain/>
+          <section id='skills'>
+            <SkillsGain/>
+          </section>
 
           {/* FIFTH LAYER */}
-          <ContactMe/>
+          <section id='contact-me'>
+            <ContactMe/>
+          </section>
+          
         </div>
       </main>
 

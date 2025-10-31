@@ -21,18 +21,18 @@ const Footer = () => {
                     <h1 className='text-[#003459] font-bold text-lg mb-4'>Navigation</h1>
 
                     <div className="flex flex-col text-black/70 gap-2">
-                        <h1 className="text-sm">Home</h1>
-                        <h1 className="text-sm">About Me</h1>
-                        <h1 className="text-sm">Portfolio</h1>
-                        <h1 className="text-sm">Skills</h1>
-                        <h1 className="text-sm">Contact Me</h1>
+                        <h1 className="text-sm"><a href="#home">Home</a></h1>
+                        <h1 className="text-sm"><a href="#about-me">About Me</a></h1>
+                        <h1 className="text-sm"><a href="#portfolio">Portfolio</a></h1>
+                        <h1 className="text-sm"><a href="#skills">Skills</a></h1>
+                        <h1 className="text-sm"><a href="#contact-me">Contact Me</a></h1>
                     </div>
 
                 </div>
 
 
                 <div className="col-span-7 md:col-span-3 flex mt-10 md:mt-0 flex-col md:pl-10 Inter">
-                    <h1 className='text-[#003459] font-bold text-center text-lg mb-4'>Personal Info</h1>
+                    <h1 className='text-[#003459] font-bold text-center md:text-start text-lg mb-4'>Personal Info</h1>
 
                     <div className="flex flex-col text-black/70 gap-2">
                         <h1 className="flex ">
@@ -61,15 +61,19 @@ const Footer = () => {
                     <h1 className='text-[#003459] font-bold text-center md:text-start text-lg mb-4'>Social Links</h1>
 
                     <div className="flex text-black/70 gap-2 justify-center md:justify-start">
-                        <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-full p-3 cursor-pointer">
+                        <a href="https://www.facebook.com/HateDis.Layf24" target="_blank" rel="noopener noreferrer" className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-full p-3 cursor-pointer">
                             <FacebookIcon className="text-xl"/> 
-                        </button>
+                        </a>
 
-                        <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-full p-3 cursor-pointer">
+                        <a href="https://github.com/Emmaannnn" target="_blank" rel="noopener noreferrer" className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-full p-3 cursor-pointer">
                             <GithubIcon className="text-xl"/> 
-                        </button>
+                        </a>
 
-                        <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-full p-3 cursor-pointer">
+                        <button onClick={() => {
+                            navigator.clipboard.writeText("emman#8495");
+                            alert("Copied your Discord tag: emman#8495"); }}
+                            className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-full p-3 cursor-pointer">
+                            
                             <DiscordIcon className="text-xl"/> 
                         </button>
                     </div>
@@ -81,7 +85,7 @@ const Footer = () => {
         
 
         <footer className="footer container sm:footer-horizontal footer-start bg-base-300 text-base-content px-5 md:px-14 py-5 border-t border-black/15">
-            <aside className="flex flex-col justify-center text-center text-xs md:text-start md:flex-row md:justify-between items-center w-full text-black/70 md:text-lg">
+            <aside className="flex flex-col justify-center text-center text-xs md:text-start md:flex-row md:justify-between items-center w-full text-black/70 md:text-md">
                 <h6>© {new Date().getFullYear()} Lawrence Emman L. Villeta - All right reserved.</h6>
                 <h6>Built with React.</h6>
             </aside>
