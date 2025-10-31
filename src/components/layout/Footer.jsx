@@ -1,7 +1,7 @@
-import NavyLogo from '../assets/Logo/navy.png'
-import GreenLogo from '../assets/Logo/blue-green.png'
+import NavyLogo from '../../assets/Logo/navy.png'
+import GreenLogo from '../../assets/Logo/blue-green.png'
 import { FacebookIcon, EmailIcon, 
-    GithubIcon, DiscordIcon, LocationIcon, PhoneIcon } from "./Icons"
+    GithubIcon, DiscordIcon, LocationIcon, PhoneIcon } from "../elements/Icons"
 
 
 const Footer = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="col-span-7 md:col-span-3 flex mt-10 md:mt-0 flex-col md:pl-20 Inter">
+                <div className="col-span-7 md:col-span-3 flex mt-10 md:mt-0 flex-col md:pl-10 Inter">
                     <h1 className='text-[#003459] font-bold text-center text-lg mb-4'>Personal Info</h1>
 
                     <div className="flex flex-col text-black/70 gap-2">

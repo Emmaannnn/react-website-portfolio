@@ -1,6 +1,7 @@
 import {useRef , useEffect} from 'react'
-import MySecondProfile from '../assets/img/dddppp.jpg'
-import BorderRight from '../assets/img/rightborder.png'
+import MySecondProfile from '../../assets/img/dddppp.jpg'
+import MyThirdProfile from '../../assets/img/ddpppp.jpg'
+import BorderRight from '../../assets/img/rightborder.png'
 
 
 const AboutMe = () => {
@@ -25,9 +26,10 @@ const AboutMe = () => {
 
     <section className="grid grid-cols-12 gap-auto bg-primary border-b border-black/15">
       <div className="col-span-12 md:col-span-6 md:p-20">
-        <div className="relative md:left-10 block w-full mx-8 mt-5">
+        <div className="relative md:left-10 block w-full md:mx-8 mt-5">
           <img ref={BorderRightMove} src={BorderRight} alt="Second Profile" className="absolute hidden md:block h-155 -left-6 rounded-xl object-cover -mt-5" />
-          <img src={MySecondProfile} alt="Second Profile" className="md:h-145 object-contain md:rounded-t-full md:object-cover" />
+          <img src={MySecondProfile} alt="Second Profile" className="md:h-145 object-contain md:rounded-t-full md:object-cover hidden md:block" />
+          <img src={MyThirdProfile} alt="Third Profile" className="shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.2)] object-contain md:rounded-t-full md:object-cover block md:hidden" />
         </div>
       </div>
 
@@ -46,7 +48,7 @@ const AboutMe = () => {
 
 
 
-              <p className="text-md mb-5">I'm <span className="font-bold"> Lawrence Emman L. Villeta</span></p>
+              <p className="text-md mb-5">dsas</p>
 
               <p className="text-md">Graduated in Batch 2024 with a <span className="font-semibold">Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.</p>
 

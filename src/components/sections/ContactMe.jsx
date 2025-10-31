@@ -1,6 +1,6 @@
 import { SubmitIcon, MessengerIcon, TelegramIcon, 
     InstagramIcon, FacebookIcon, EmailIcon, 
-    GithubIcon, DiscordIcon } from "./Icons"
+    GithubIcon, DiscordIcon } from "../elements/Icons"
 
 const ContactMe = () => {
   return (

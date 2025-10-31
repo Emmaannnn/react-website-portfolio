@@ -1,6 +1,6 @@
-import NavyLogo from '../assets/Logo/navy.png'
-import GreenLogo from '../assets/Logo/blue-green.png'
-import { HamburgerIcon } from './Icons'
+import NavyLogo from '../../assets/Logo/navy.png'
+import GreenLogo from '../../assets/Logo/blue-green.png'
+import { HamburgerIcon } from '../elements/Icons'
 const NavigationBar = () => {
   return (
       <nav className="flex justify-center items-center bg-primary p-3 text-black shadow-md fixed w-full top-0 left-0 z-50 rounded-bl-lg rounded-br-lg">
@@ -27,7 +27,7 @@ const NavigationBar = () => {
 
                       {/* Sidebar content here */}
                       <li><a>Home</a></li>
-                      <li><a>About Me</a></li>
+                      <li><a href='#about-me'>About Me</a></li>
                       <li><a>Portfolio</a></li>
                       <li><a>Skills</a></li>
                       <li><a>Contact Me</a></li>
@@ -69,7 +69,7 @@ const NavigationBar = () => {
 
                 <div className="col-span-6">
                   <ul className="flex justify-evenly text-lg font-semibold text-third">
-                    <li className="Inter font-medium text-sm block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">ABOUT ME</li>
+                    <li className="Inter font-medium text-sm block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer"><a href="#about-me">ABOUT ME</a></li>
                     <li className="Inter font-medium text-sm block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">PORTFOLIO</li>
                     <li className="Inter font-medium text-sm block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">SKILLS</li>
                     <li className="Inter font-medium text-sm block hover:text-[#028090] rounded px-4 py-2 transition-all cursor-pointer">CONTACT ME</li>

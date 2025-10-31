@@ -1,7 +1,7 @@
 import {HTMLIcon, CSSIcon, JSIcon, 
     ReactIcon, TailwindIcon, DaisyIcon, 
     BootstrapIcon, PHPIcon, MySQLIcon, 
-    PhotoshopIcon, FigmaIcon, CanvaIcon} from '../components/Icons'
+    PhotoshopIcon, FigmaIcon, CanvaIcon} from '../elements/Icons'
 
 
 const SkillsGain = () => {

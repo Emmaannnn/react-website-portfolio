@@ -1,22 +1,22 @@
 import './App.css'
-import NavigationBar from './components/NavigationBar'
-import GreetingsWithImage from './components/GreetingsWithImage'
-import AboutMe from './components/AboutMe'
-import ProjectPortfolio from './components/ProjectPortfolio'
-import SkillsGain from './components/SkillsGain'
-import ContactMe from './components/ContactMe'
-import Footer from './components/Footer'
+import NavigationBar from './components/layout/NavigationBar'
+import GreetingsWithImage from './components/sections/GreetingsWithImage'
+import AboutMe from './components/sections/AboutMe'
+import ProjectPortfolio from './components/sections/ProjectPortfolio'
+import SkillsGain from './components/sections/SkillsGain'
+import ContactMe from './components/sections/ContactMe'
+import Footer from './components/layout/Footer'
 
 
 function App() {
 
   return (
     <>
-      <div className="z-50">
+      <header className="z-50">
         <NavigationBar/>
-      </div>
+      </header>
       
-      <div className="flex justify-center h-full w-full">
+      <main className="flex justify-center h-full w-full">
         <div className="container">
           {/* FIRST LAYER */}
           <GreetingsWithImage/>
@@ -33,7 +33,8 @@ function App() {
           {/* FIFTH LAYER */}
           <ContactMe/>
         </div>
-      </div>
+      </main>
+
 
       <Footer/>
       
