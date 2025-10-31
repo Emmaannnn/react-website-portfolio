@@ -61,7 +61,7 @@ const GreetingsWithImage = () => {
         </div>
 
                 
-        <div className="relative col-span-12 md:col-span-5 flex items-start justify-center overflow-x-hidden mt-10 h-105  md:h-auto">
+        <div className="relative col-span-12 md:col-span-5 flex items-start justify-center overflow-hidden mt-10 h-105  md:h-auto">
             <img ref={BorderTopLeftMove} src={BorderTopLeft} alt="Top Left Border" className="absolute z-5 md:h-145 -left-5"/>
             <img ref={BorderBottomRightMove} src={BorderBottomRight} alt="Top Left Border" className="absolute z-5 h-145 hidden md:block"/>
             <img ref={BorderTopRightMove} src={BorderTopRight} alt="Top Right Border" className="absolute z-5 md:h-145 block md:hidden -right-5"/>

@@ -159,7 +159,7 @@ const ProjectPortfolio = () => {
       <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full mb-3 text-center mt-30">| Graphic <span className='text-secondary'>Design.</span></h2>
       <div className="Varela text-2xl md:text-3xl font-extrabold text-[#003459] w-full text-center mb-3 italic ">"Making <span className='text-secondary'>creativity visible.</span>"</div>
       
-      <div className="group relative">
+      <div className="group relative overflow-hidden">
         <img src={BorderRight} alt="" className='absolute h-125 -right-20 md:right-0' />
         <img src={BorderLeft} alt="" className='absolute h-125 -left-20 md:left-0' />
         <div ref={scrollRef} className="col-span-12 flex flex-nowrap h-125 gap-4 py-10 px-4 overflow-hidden">
