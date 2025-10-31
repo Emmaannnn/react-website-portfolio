@@ -4,7 +4,7 @@ import { SubmitIcon, MessengerIcon, TelegramIcon,
 
 const ContactMe = () => {
   return (
-    <section className="py-15 md:mt-5 px-10 md:px-40">
+    <section className="py-15 md:mt-5 px-7 md:px-40">
         <h1 className="Inter font-extrabold text-4xl md:text-6xl text-third pb-10">| Get <span className="text-secondary">In Touch.</span></h1>
         
         <h5 className="Inter text-[#003459] text-xl md:text-2xl">Have a vision in mind? Drop me a message — let’s bring it to life together. </h5>

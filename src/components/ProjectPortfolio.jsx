@@ -100,7 +100,7 @@ const ProjectPortfolio = () => {
     <section className="pt-10 md:pt-20 pb-10 border-b border-black/15">
 
       <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full mb-3 text-center">| Website <span className='text-secondary'>Project.</span></h2>
-      <div className="Varela text-2xl md:text-3xl font-extrabold text-third w-full text-center mb-7 md:mb-15 italic">"Striving for <span className='text-secondary'>Progress</span>, <span className='text-secondary'>Not Perfection</span>"</div>
+      <div className="Varela text-sm md:text-3xl font-extrabold text-third w-full text-center mb-7 md:mb-15 italic">"Striving for <span className='text-secondary'>Progress</span>, <span className='text-secondary'>Not Perfection</span>"</div>
 
       {/* WEBSITE PROJECTS */}
       <div className="bg-primary rounded-2xl shadow-md border border-slate-200 p-3 md:p-4 hover:shadow-lg hover:scale-105 transition-all duration-300 mx-5 md:mx-40 mb-6">
@@ -157,7 +157,7 @@ const ProjectPortfolio = () => {
             
       {/* GRAPHIC DESIGN */}
       <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full mb-3 text-center mt-30">| Graphic <span className='text-secondary'>Design.</span></h2>
-      <div className="Varela text-2xl md:text-3xl font-extrabold text-[#003459] w-full text-center mb-3 italic ">"Making <span className='text-secondary'>creativity visible.</span>"</div>
+      <div className="Varela text-sm md:text-3xl font-extrabold text-[#003459] w-full text-center mb-3 italic ">"Making <span className='text-secondary'>creativity visible.</span>"</div>
       
       <div className="group relative overflow-hidden">
         <img src={BorderRight} alt="" className='absolute h-125 -right-20 md:right-0' />
