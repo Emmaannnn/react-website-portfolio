@@ -8,16 +8,16 @@ const Footer = () => {
   return (
     <section className="flex flex-col justify-center items-center border-t border-black/15 bg-base-300 text-base-content">
         <div className="container">
-            <div className="grid grid-cols-12 px-20 gap-10 pt-20 pb-10">
+            <div className="grid grid-cols-12 px-10 md:px-20 md:gap-10 pt-20 pb-10">
 
-                <div className="col-span-3 flex items-center">
-                    <a href="#" class="relative group h-auto">
-                         <img src={NavyLogo} class=" w-full block group-hover:hidden" alt="default logo"/>
-                         <img src={GreenLogo} class=" w-full hidden group-hover:block"  alt=""/>
+                <div className="col-span-12 md:col-span-3 flex items-center">
+                    <a href="#" className="relative group h-auto">
+                         <img src={NavyLogo} className=" w-full block group-hover:hidden" alt="default logo"/>
+                         <img src={GreenLogo} className=" w-full hidden group-hover:block"  alt=""/>
                     </a>
                 </div>
 
-                <div className="col-span-3 flex flex-col justify-center pl-20 Inter">
+                <div className="col-span-12 md:col-span-3 flex mt-10 md:mt-0 flex-col justify-center text-center md:text-start md:pl-20 Inter">
                     <h1 className='text-[#003459] font-bold text-lg mb-4'>Navigation</h1>
 
                     <div className="flex flex-col text-black/70 gap-2">
@@ -31,24 +31,24 @@ const Footer = () => {
                 </div>
 
 
-                <div className="col-span-3 flex flex-col pl-20 Inter">
+                <div className="col-span-12 md:col-span-3 flex mt-10 md:mt-0 flex-col items-center md:justify-start text-center md:pl-20 Inter">
                     <h1 className='text-[#003459] font-bold text-lg mb-4'>Personal Info</h1>
 
-                    <div className="flex flex-col text-black/70 gap-2">
-                        <button className="flex">
+                    <div className="flex flex-col text-black/70 gap-2 ">
+                        <h1 className="flex items-center">
                             <PhoneIcon className="mr-3"/> 
                             <span className="text-sm"> +63 966 224 5295</span>
-                        </button>
+                        </h1>
                         
-                        <button className="flex">
+                        <h1 className="flex">
                             <EmailIcon className="mr-3"/> 
                             <span className="text-sm"> emmanvilleta@gmail.com</span>
-                        </button>
+                        </h1>
                     
-                        <button className="flex">
+                        <h1 className="flex">
                             <LocationIcon className="mr-3"/> 
                             <span className="text-sm"> Lucena City, Quezon</span>
-                        </button>
+                        </h1>
 
 
 
@@ -57,10 +57,10 @@ const Footer = () => {
                 </div>
 
 
-                <div className="col-span-3 flex flex-col pl-20 Inter">
-                    <h1 className='text-[#003459] font-bold text-lg mb-4'>Social Links</h1>
+                <div className="col-span-12 md:col-span-3 flex mt-10 md:mt-0 flex-col justify-center md:justify-start text-center md:text-start md:pl-20 Inter">
+                    <h1 className='text-[#003459] font-bold text-center text-lg mb-4'>Social Links</h1>
 
-                    <div className="flex text-black/70 gap-2">
+                    <div className="flex text-black/70 gap-2 justify-center md:justify-start">
                         <button className="flex border border-black/15 bg-[#f7f7f7] hover:bg-[#f0f0f0] shadow-sm hover:shadow-md justify-start items-center rounded-full p-3 cursor-pointer">
                             <FacebookIcon className="text-xl"/> 
                         </button>
@@ -80,8 +80,8 @@ const Footer = () => {
         </div>
         
 
-        <footer className="footer container sm:footer-horizontal footer-start bg-base-300 text-base-content px-14 py-5 border-t border-black/15">
-            <aside className="flex justify-between items-center w-full text-black/70">
+        <footer className="footer container sm:footer-horizontal footer-start bg-base-300 text-base-content px-5 md:px-14 py-5 border-t border-black/15">
+            <aside className="flex flex-col justify-center text-center text-xs md:text-start md:flex-row md:justify-between items-center w-full text-black/70 md:text-lg">
                 <h6>© {new Date().getFullYear()} Lawrence Emman L. Villeta - All right reserved.</h6>
                 <h6>Built with React.</h6>
             </aside>

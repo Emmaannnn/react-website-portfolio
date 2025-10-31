@@ -4,13 +4,13 @@ import { SubmitIcon, MessengerIcon, TelegramIcon,
 
 const ContactMe = () => {
   return (
-    <section className="py-15 mt-5 px-40">
-        <h1 className="Inter font-extrabold text-6xl text-third pb-10">| Get <span className="text-secondary">In Touch.</span></h1>
+    <section className="py-15 md:mt-5 px-10 md:px-40">
+        <h1 className="Inter font-extrabold text-4xl md:text-6xl text-third pb-10">| Get <span className="text-secondary">In Touch.</span></h1>
         
-        <h5 className="Inter text-[#003459] text-2xl">Have a vision in mind? Drop me a message — let’s bring it to life together. </h5>
+        <h5 className="Inter text-[#003459] text-xl md:text-2xl">Have a vision in mind? Drop me a message — let’s bring it to life together. </h5>
     
-        <div className="grid grid-cols-12 gap-10 mt-3 Inter">
-            <div className="col-span-6">
+        <div className="grid grid-cols-12 md:gap-10 mt-3 Inter">
+            <div className="col-span-12 md:col-span-6">
                 <h2 className="text-lg text-[#003459]/70 font-bold py-5">Let’s connect</h2>
 
                 <form action="#" className="flex flex-col gap-3">
@@ -29,7 +29,7 @@ const ContactMe = () => {
 
 
 
-            <div className="col-span-6">
+            <div className="col-span-12 md:mt-5 md:col-span-6">
                 <h2 className="text-lg text-[#003459]/70 font-bold py-5">Other ways to communicate</h2>
 
                 <div className="flex flex-col gap-2">

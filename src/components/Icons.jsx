@@ -298,9 +298,10 @@ export const FacebookIcon = (props) => {
 
 export const EmailIcon = (props) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="1em" height="1em" {...props} > <path fill="currentColor" d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-2.2 2L16 14.78L6.2 8ZM4 24V8.91l11.43 7.91a1 1 0 0 0 1.14 0L28 8.91V24Z" ></path> </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" {...props} > <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" > <rect width="20" height="16" x="2" y="4" rx="2"></rect> <path d="m22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path> </g> </svg>
   )
 }
+
 
 export const GithubIcon = (props) => {
   return (
@@ -327,4 +328,8 @@ export const PhoneIcon = (props) => {
 }
 
 
-
+export const HamburgerIcon = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="1em" height="1em" {...props} > <g fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" > <path d="M7.94971 11.9497H39.9497"></path> <path d="M7.94971 23.9497H39.9497"></path> <path d="M7.94971 35.9497H39.9497"></path> </g> </svg>
+  )
+}
