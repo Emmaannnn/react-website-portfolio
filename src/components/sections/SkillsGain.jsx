@@ -7,7 +7,7 @@ import {HTMLIcon, CSSIcon, JSIcon,
 const SkillsGain = () => {
   return (
 
-    <section className="border-b border-black/15 py-15">
+    <div className="border-b border-black/15 py-15">
     <div className="Inter bg-white rounded-2xl shadow-xl border px-5 border-slate-200 py-11 hover:shadow-2xl transition-all duration-300 mx-5 md:mx-30 ">
         <h1 className="text-center font-extrabold text-4xl md:text-6xl text-third pb-10 -mx-7">Behind <span className='text-secondary'>Creations.</span></h1>
         <div className="Varela text-sm md:text-xl font-extrabold text-[#003459] w-full text-center mb-10 italic -mt-7 md:-mt-5">"These are the tools and technologies I use to <span className="text-secondary">design</span>, <span className="text-secondary">build</span>, and <span className="text-secondary">deliver</span>."</div>
@@ -100,7 +100,7 @@ const SkillsGain = () => {
 
         </div>
     </div>
-    </section>
+    </div>
 
   )
 }

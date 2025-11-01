@@ -33,7 +33,7 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="col-span-12 md:col-span-6 text-black py-10 md:pt-15 md:px-7 md:pb-13 ">
+      <div className="col-span-12 md:col-span-6 z-6 text-black py-10 md:pt-15 md:px-7 md:pb-13 ">
         <div className="flex flex-col">
           <div className="card-title flex flex-col">
             <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full px-7 md:px-0 md:mb-3">| About <span className='text-secondary'>Me.</span></h2>
