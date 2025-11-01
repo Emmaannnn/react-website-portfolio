@@ -2,7 +2,7 @@ import './App.css'
 import NavigationBar from './components/layout/NavigationBar'
 import GreetingsWithImage from './components/sections/GreetingsWithImage'
 import AboutMe from './components/sections/AboutMe'
-import ProjectPortfolio from './components/sections/ProjectPortfolio'
+import { WebsitePortfolio, GraphicDesignPortfolio} from './components/sections/ProjectPortfolio'
 import SkillsGain from './components/sections/SkillsGain'
 import ContactMe from './components/sections/ContactMe'
 import Footer from './components/layout/Footer'
@@ -33,7 +33,8 @@ function App() {
 
           {/* THIRD LAYER */}
           <section id='portfolio'>
-            <ProjectPortfolio/>
+            <WebsitePortfolio/>
+            <GraphicDesignPortfolio/>
           </section>
           
 

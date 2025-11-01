@@ -42,29 +42,32 @@ const AboutMe = () => {
           <div className="card-body Varela">
             <div className="bg-primary rounded-2xl shadow-lg md:shadow-md border border-slate-200 p-5 hover:shadow-lg transition-all duration-300 text-black/70">
 
-              <p className="text-md mb-5">I'm <span className="font-bold"> Lawrence Emman L. Villeta</span></p>
+              <p className="text-md mb-5">I'm <span className="font-bold"> Lawrence Emman L. Villeta</span>,
+               with a hands-on experience in Web Development and Photo Editing gained through hobbies, freelancing, and work responsibilities.</p>
 
-              <p className="text-md">Graduated in Batch 2024 with a <span className="font-semibold">Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.</p>
+              <p className="text-md mb-5">I graduated in Batch 2024 with a 
+                <span className="font-semibold"> Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.
+              </p>
+
+              <p className="text-md mb-5">Throughout my journey, I've always aspired to become a professional  
+                <span className="font-semibold"> Web Developer</span> and <span className="font-semibold">Graphic Artist</span>. 
+                My passion for technology and design inspires me to develop and design both creative and functional projects.
+                I always take full responsibility for every task assigned to me, and strive to meet or exceed the client's expectation.
+              </p>
+
+              <p className="text-md mb-5">
+                As I continue my journey, I always aim to keep learning, growing, and adapting.
+                 I believe that continuous improvement is essential to becoming both a better creator and a better person.
+                  With every experience, I strive to gain new knowledge and refine my skills to deliver meaningful and impactful work.
+              </p>
 
 
 
-              <p className="text-md mb-5">dsas</p>
-
-              <p className="text-md">Graduated in Batch 2024 with a <span className="font-semibold">Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.</p>
 
 
 
 
-              <p className="text-md mb-5">I'm <span className="font-bold"> Lawrence Emman L. Villeta</span></p>
-
-              <p className="text-md">Graduated in Batch 2024 with a <span className="font-semibold">Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.</p>
-
-
-
-              <p className="text-md mb-5">I'm <span className="font-bold"> Lawrence Emman L. Villeta</span></p>
-
-              <p className="text-md">Graduated in Batch 2024 with a <span className="font-semibold">Bachelor of Science in Information Technology</span> from <span className='font-semibold'>Dalubhasaan ng Lungsod ng Lucena</span>.</p>
-
+          
             </div>
             
           </div>
