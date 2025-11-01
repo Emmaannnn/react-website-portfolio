@@ -55,19 +55,24 @@ const AboutMe = () => {
                 I always take full responsibility for every task assigned to me, and strive to meet or exceed the client's expectation.
               </p>
 
-              <p className="text-md mb-5">
+              <p className="text-md mb-8">
                 As I continue my journey, I always aim to keep learning, growing, and adapting.
                  I believe that continuous improvement is essential to becoming both a better creator and a better person.
                   With every experience, I strive to gain new knowledge and refine my skills to deliver meaningful and impactful work.
               </p>
+      
+              <div className="flex flex-col justify-center items-center">
+                <h1 className='text-lg font-bold p-2'>Soft Skills</h1>
+                <div className="flex flex-wrap justify-center items-center gap-1">
+                  <div className="badge badge-outline badge-sm badge-info">Problem Solving</div>
+                  <div className="badge badge-outline badge-sm badge-info">Adaptability</div>
+                  <div className="badge badge-outline badge-sm badge-info">Collaboration</div>
+                  <div className="badge badge-outline badge-sm badge-info">Communication</div>
+                  <div className="badge badge-outline badge-sm badge-info">Fast Learner</div>
+                  <div className="badge badge-outline badge-sm badge-info">Trustworthiness</div>
+                </div>
+              </div>
 
-
-
-
-
-
-
-          
             </div>
             
           </div>

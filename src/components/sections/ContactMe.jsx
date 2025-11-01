@@ -1,8 +1,45 @@
+import React from "react";
+import Swal from "sweetalert2"
+
 import { SubmitIcon, MessengerIcon, TelegramIcon, 
     InstagramIcon, FacebookIcon, EmailIcon, 
     GithubIcon, DiscordIcon } from "../elements/Icons"
 
 const ContactMe = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "093ec20d-d8fd-4d70-93af-74271525ed0d");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      Swal.fire({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success"
+    });
+      event.target.reset();
+    } else {
+
+      console.log("Error", data);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong, please try again..",
+    });
+    }
+  };
+
   return (
     <div className="py-15 md:mt-5 px-7 md:px-40">
         <h1 className="Inter font-extrabold text-4xl md:text-6xl text-third pb-10">| Get <span className="text-secondary">In Touch.</span></h1>
@@ -13,16 +50,18 @@ const ContactMe = () => {
             <div className="col-span-12 md:col-span-6">
                 <h2 className="text-lg text-[#003459]/70 font-bold py-5">Let’s connect</h2>
 
-                <form action="#" className="flex flex-col gap-3">
-                    <input type="text" placeholder="Enter your full name" className="input input-lg w-full transition-all rounded-lg p-5" />
-                    <input type="email" placeholder="you@example.com" className="input input-lg w-full transition-all rounded-lg p-5" />
-                    <input type="text" placeholder="Project inquiry, collaboration, etc." className="input input-lg w-full transition-all rounded-lg p-5" />
-                    <textarea rows="5" placeholder="Discuss about your project, timeline, and how I can help..." className="textarea textarea-lg w-full rounded-lg p-5 transition-all resize-none"></textarea>
+                <form className="flex flex-col gap-3" onSubmit={onSubmit}>
+                    <input type="text" name="name" placeholder="Enter your full name" className="input input-lg w-full transition-all rounded-lg p-5" required/>
+                    <input type="email" name="email" placeholder="you@example.com" className="input input-lg w-full transition-all rounded-lg p-5" required/>
+                    <input type="text" name="inquiry" placeholder="Project inquiry, collaboration, etc." className="input input-lg w-full transition-all rounded-lg p-5" required/>
+                    <textarea rows="5" name="message" placeholder="Discuss about your project, timeline, and how I can help..." className="textarea textarea-lg w-full rounded-lg p-5 transition-all resize-none" required></textarea>
 
-                    <button className="btn bg-[#003459] hover:bg-[#003459]/90 rounded-lg text-white font-bold mt-4">
+                    <button type="submit" className="btn bg-[#003459] hover:bg-[#003459]/90 rounded-lg text-white font-bold mt-4">
                         <SubmitIcon className="mr-1"/> 
                         <span className="text-xs">Send Message</span>
                     </button>
+
+                    <span>{result}</span>
                 </form>
                 
             </div>
