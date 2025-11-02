@@ -1,6 +1,8 @@
 import NavyLogo from '../../assets/Logo/navy.png'
 import GreenLogo from '../../assets/Logo/blue-green.png'
 import { HamburgerIcon } from '../elements/Icons'
+import fileResume from '../../../public/ResumeFolder/VILLETA_CV.pdf'
+
 const NavigationBar = () => {
   return (
       <nav className="flex justify-center items-center bg-primary p-3 text-black shadow-md fixed w-full top-0 left-0 z-50 rounded-bl-lg rounded-br-lg">
@@ -32,9 +34,9 @@ const NavigationBar = () => {
                       <li><a href='#skills'>Skills</a></li>
                       <li><a href='#contact-me'>Contact Me</a></li>
                       <li className='mt-3'>
-                        <button className="Inter bg-[#003459] px-3 py-2 text-xs font-semibold rounded-lg hover:bg-[#003459]/90 text-[#f7f7f7] transition duration-300 cursor-pointer">
+                        <a href={fileResume} rel="noopener noreferrer" className="Inter bg-[#003459] px-3 py-2 text-xs font-semibold rounded-lg hover:bg-[#003459]/90 text-[#f7f7f7] transition duration-300 cursor-pointer" download>
                           Download CV
-                        </button>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -78,8 +80,8 @@ const NavigationBar = () => {
 
 
                 <div className="col-span-3 flex justify-end pr-14">
-                  <a href="#" download>
-                    <button className="Inter bg-transparent px-6 py-2 text-[15px] border border-[#003459] font-semibold text-[#003459] rounded-lg hover:bg-[#003459] hover:text-[#f7f7f7] transition duration-300 cursor-pointer">Download CV</button>
+                  <a href={fileResume} rel="noopener noreferrer" className="Inter bg-transparent px-6 py-2 text-[15px] border border-[#003459] font-semibold text-[#003459] rounded-lg hover:bg-[#003459] hover:text-[#f7f7f7] transition duration-300 cursor-pointer" download>
+                    Download CV
                   </a>
               </div>
             </div>

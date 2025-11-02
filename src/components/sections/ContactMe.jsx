@@ -6,11 +6,19 @@ import { SubmitIcon, MessengerIcon, TelegramIcon,
     GithubIcon, DiscordIcon } from "../elements/Icons"
 
 const ContactMe = () => {
-  const [result, setResult] = React.useState("");
-
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    Swal.fire({
+        title: 'Sending...',
+        text: 'Please wait while your request is being processed.',
+        icon: 'info',
+        showConfirmButton: false,
+        timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading();
+            }
+    });
+
     const formData = new FormData(event.target);
 
     formData.append("access_key", "093ec20d-d8fd-4d70-93af-74271525ed0d");
@@ -23,11 +31,24 @@ const ContactMe = () => {
     const data = await response.json();
 
     if (data.success) {
-      Swal.fire({
-        title: "Good job!",
-        text: "You clicked the button!",
-        icon: "success"
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
     });
+        Toast.fire({
+        icon: "success",
+        title: "Thanks for messaging! I’ll reply as soon as I see your message."
+    });
+
+
       event.target.reset();
     } else {
 
@@ -61,7 +82,6 @@ const ContactMe = () => {
                         <span className="text-xs">Send Message</span>
                     </button>
 
-                    <span>{result}</span>
                 </form>
                 
             </div>

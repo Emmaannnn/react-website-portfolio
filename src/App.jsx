@@ -15,7 +15,7 @@ function App() {
     
       <RootLayout className="z-50">
 
-      <main className="flex justify-center h-full w-full">
+      <main className="flex justify-center">
         <div className="container">
           {/* FIRST LAYER */}
 

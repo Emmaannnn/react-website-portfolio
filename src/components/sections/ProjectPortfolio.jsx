@@ -53,7 +53,7 @@ export const WebsitePortfolio = () => {
 
 
   return (
-    <div className="pt-10 md:pt-20 pb-10 border-b border-black/15">
+    <div className="md:py-20 py-10 border-b border-black/15">
 
       <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full mb-3 text-center">| Website <span className='text-secondary'>Project.</span></h2>
       <div className="Varela text-sm md:text-3xl font-extrabold text-third w-full text-center mb-7 md:mb-15 italic">"Striving for <span className='text-secondary'>Progress</span>, <span className='text-secondary'>Not Perfection</span>"</div>
@@ -91,7 +91,7 @@ export const WebsitePortfolio = () => {
                 </p>
 
                 {project.isLive === true ? (
-                  <a href={project.link} target='_blank' >
+                  <a href={project.link} target='_blank' rel="noopener noreferrer" >
                     <button className="btn w-full">Live Demo <svg className="pl-1 h-4 w-4 cursor-pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 256 256" height="256px" id="Layer_1" version="1.1" viewBox="0 0 256 256" width="256px" xml:space="preserve"><path d="M164.525,222.138l89.6-89.6c2.5-2.5,2.5-6.551,0-9.051l-89.6-89.6c-2.5-2.5-6.551-2.5-9.051,0s-2.5,6.743,0,9.243  L234.15,122H6.4c-3.535,0-6.4,2.466-6.4,6s2.865,6,6.4,6h227.75l-78.676,78.881c-1.25,1.25-1.875,2.992-1.875,4.629  s0.625,3.326,1.875,4.576C157.975,224.586,162.025,224.638,164.525,222.138z"></path></svg></button>
                   </a>
                 ):(
@@ -101,7 +101,7 @@ export const WebsitePortfolio = () => {
               </div>
             </div>
           </div>
-        ))};
+        ))}
         </div>
 
 
@@ -186,7 +186,7 @@ export const GraphicDesignPortfolio = () => {
   const loopImages = [...images, ...images];
 
   return (
-    <div className="pt-10 md:pt-20 pb-10 border-b border-black/15">
+    <div className="md:py-20 pb-10 border-b border-black/15">
           {/* GRAPHIC DESIGN */}
       <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full mb-3 text-center">| Graphic <span className='text-secondary'>Design.</span></h2>
       <div className="Varela text-sm md:text-3xl font-extrabold text-[#003459] w-full text-center mb-3 italic ">"Making <span className='text-secondary'>creativity visible.</span>"</div>

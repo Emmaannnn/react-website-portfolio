@@ -5,9 +5,9 @@ import BorderRight from '../../assets/img/rightborder.png'
 
 
 const AboutMe = () => {
+  const softSkills = ['Problem Solving', 'Adaptability', 'Collaboration', 'Communication', 'Fast Learner', 'Trustworthiness']
 
   const BorderRightMove = useRef(null);
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +39,7 @@ const AboutMe = () => {
             <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full px-7 md:px-0 md:mb-3">| About <span className='text-secondary'>Me.</span></h2>
           </div>
 
-          <div className="card-body Varela">
+          <div className="card-body Inter">
             <div className="bg-primary rounded-2xl shadow-lg md:shadow-md border border-slate-200 p-5 hover:shadow-lg transition-all duration-300 text-black/70">
 
               <p className="text-md mb-5">I'm <span className="font-bold"> Lawrence Emman L. Villeta</span>,
@@ -50,7 +50,7 @@ const AboutMe = () => {
               </p>
 
               <p className="text-md mb-5">Throughout my journey, I've always aspired to become a professional  
-                <span className="font-semibold"> Web Developer</span> and <span className="font-semibold">Graphic Artist</span>. 
+                <span className="font-semibold"> Web Developer</span> and <span className="font-semibold">Graphic Designer</span>. 
                 My passion for technology and design inspires me to develop and design both creative and functional projects.
                 I always take full responsibility for every task assigned to me, and strive to meet or exceed the client's expectation.
               </p>
@@ -61,15 +61,12 @@ const AboutMe = () => {
                   With every experience, I strive to gain new knowledge and refine my skills to deliver meaningful and impactful work.
               </p>
       
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
                 <h1 className='text-lg font-bold p-2'>Soft Skills</h1>
-                <div className="flex flex-wrap justify-center items-center gap-1">
-                  <div className="badge badge-outline badge-sm badge-info">Problem Solving</div>
-                  <div className="badge badge-outline badge-sm badge-info">Adaptability</div>
-                  <div className="badge badge-outline badge-sm badge-info">Collaboration</div>
-                  <div className="badge badge-outline badge-sm badge-info">Communication</div>
-                  <div className="badge badge-outline badge-sm badge-info">Fast Learner</div>
-                  <div className="badge badge-outline badge-sm badge-info">Trustworthiness</div>
+                <div className="flex flex-wrap justify-center items-center gap-1 md:justify-start md:items-start">
+                  {softSkills.map ((coreSkill, index) => (
+                    <div key={index} className="badge badge-outline badge-xs md:badge-sm border text-black/60">{coreSkill}</div>
+                  ))}
                 </div>
               </div>
 
