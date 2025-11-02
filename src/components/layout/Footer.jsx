@@ -1,5 +1,5 @@
-import NavyLogo from '../../assets/Logo/navy.png'
-import GreenLogo from '../../assets/Logo/blue-green.png'
+import NavyLogo from '/Logo/navy.png'
+import GreenLogo from '/Logo/blue-green.png'
 import { FacebookIcon, EmailIcon, 
     GithubIcon, DiscordIcon, LocationIcon, PhoneIcon } from "../elements/Icons"
 

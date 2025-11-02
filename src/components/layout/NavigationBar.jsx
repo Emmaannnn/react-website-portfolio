@@ -1,5 +1,5 @@
-import NavyLogo from '../../assets/Logo/navy.png'
-import GreenLogo from '../../assets/Logo/blue-green.png'
+import NavyLogo from '/Logo/navy.png'
+import GreenLogo from '/Logo/blue-green.png'
 import { HamburgerIcon } from '../elements/Icons'
 import fileResume from '/ResumeFolder/VILLETA_CV.pdf'
 
