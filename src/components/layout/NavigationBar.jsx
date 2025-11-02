@@ -1,7 +1,7 @@
 import NavyLogo from '../../assets/Logo/navy.png'
 import GreenLogo from '../../assets/Logo/blue-green.png'
 import { HamburgerIcon } from '../elements/Icons'
-import fileResume from '../../../public/ResumeFolder/VILLETA_CV.pdf'
+import fileResume from '/ResumeFolder/VILLETA_CV.pdf'
 
 const NavigationBar = () => {
   return (
