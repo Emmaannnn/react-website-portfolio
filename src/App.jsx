@@ -7,7 +7,6 @@ import SkillsGain from './components/sections/SkillsGain'
 import ContactMe from './components/sections/ContactMe'
 
 
-
 function App() {
 
   return (
