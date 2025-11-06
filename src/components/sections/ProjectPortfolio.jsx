@@ -186,7 +186,7 @@ export const GraphicDesignPortfolio = () => {
   const loopImages = [...images, ...images];
 
   return (
-    <div className="md:py-20 pb-10 border-b border-black/15">
+    <div className="py-10 md:py-20 pb-10 border-b border-black/15">
           {/* GRAPHIC DESIGN */}
       <h2 className="Inter text-4xl md:text-6xl font-bold text-third w-full mb-3 text-center">| Graphic <span className='text-secondary'>Design.</span></h2>
       <div className="Varela text-sm md:text-3xl font-extrabold text-[#003459] w-full text-center mb-3 italic ">"Making <span className='text-secondary'>creativity visible.</span>"</div>
